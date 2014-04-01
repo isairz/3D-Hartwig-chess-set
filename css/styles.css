@@ -290,7 +290,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   transform-origin: 0 0;
 }
 
-.valid:before,
+/*.valid:before,
 .valid:after,
 .current:before,
 .current:after,
@@ -358,7 +358,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
 .valid.captured.highlight:after { border: .1em solid rgba(255,67,47,1); }
 
 .valid[class*="O-O"]:before { background: #CC0; }
-.valid[class*="O-O"]:after { border: .1em solid #CC0; }
+.valid[class*="O-O"]:after { border: .1em solid #CC0; }*/
 
 /* ---------------------------------------------------------------------------------------------------- pawn / king head */
 

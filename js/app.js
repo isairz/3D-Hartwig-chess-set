@@ -173,7 +173,7 @@ function createPiece(color, piece, position) {
   clone.addEventListener(press, grabPiece, false);
   clone.setAttribute("id",color+piece+position);
   if ( color === "w" ) { clone.classList.add("white"); } 
-  else { clone.classList.add("black"); }
+  else { clone.classList.add("white"); }
   document.getElementById(position).appendChild(clone);
 }
 
@@ -245,8 +245,8 @@ function updateBoard() {
 
 function updateCaptured() {
   var wbPiece  = document.getElementById("board").getElementsByClassName("white");
-  var bbPiece  = document.getElementById("board").getElementsByClassName("black");
-  var wjPiece  = document.getElementById("w-jail").getElementsByClassName("black");
+  var bbPiece  = document.getElementById("board").getElementsByClassName("white");
+  var wjPiece  = document.getElementById("w-jail").getElementsByClassName("white");
   var bjPiece  = document.getElementById("b-jail").getElementsByClassName("white");
   if (wbPiece.length+bjPiece.length !== 16) {
     var child = document.getElementById("b-jail").lastChild;
